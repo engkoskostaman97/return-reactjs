@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Footer = () => {
+const Footer = (props) => {
   return(
     <div>
-      <h3>halaman 3</h3>
-      <p>2023</p>
+      <h3>halaman {props.name}</h3>
+      <p>{props.tahun}</p>
     </div>
   );
 }

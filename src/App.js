@@ -1,15 +1,5 @@
 import React,{Component} from 'react'
-
-class Header extends Component {
-  render(){
-    return (
-     <div>
-      <h1> Elements</h1>
-     </div>
-    );
-  }
-}
-
+import Header from './Header';
 class App extends Component {
   render(){
     return (

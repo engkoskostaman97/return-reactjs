@@ -1,8 +1,12 @@
-import React from 'react'
 
-export default function Image() {
-  return (
-    <img
-    src="https://s3-ap-southeast-1.amazonaws.com/niomic/img/sample/food1.jpg"  alt="data" width="500"/>
-  )
+import React, { Component } from "react";
+
+class Image extends Component{
+  render(){
+    return(
+      <img src={this.props.linkgambar} alt ="gambar" width={this.props.lebar}/>
+    );
+  }
 }
+
+export default Image;

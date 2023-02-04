@@ -1,9 +1,24 @@
-function App() {
-  return (
-   <div>
-    <h1>Rendering Elements</h1>
-   </div>
-  );
+import React,{Component} from 'react'
+
+class Header extends Component {
+  render(){
+    return (
+     <div>
+      <h1> Elements</h1>
+     </div>
+    );
+  }
+}
+
+class App extends Component {
+  render(){
+    return (
+     <div>
+      <Header/>
+      <h1>Rendering Elements</h1>
+     </div>
+    );
+  }
 }
 
 export default App;

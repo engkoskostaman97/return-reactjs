@@ -1,14 +1,7 @@
 import React,{Component} from 'react'
 import Header from './Header';
+import Footer from './Footer';
 
-const Footer = () => {
-  return(
-    <div>
-      <h3>halaman 3</h3>
-      <p>2023</p>
-    </div>
-  );
-}
 class App extends Component {
   render(){
     return (

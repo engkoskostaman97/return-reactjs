@@ -9,9 +9,10 @@ class Header extends Component {
     }
     this.handleMessage=this.handleMessage.bind(this);
   }
-  handleMessage(){
+  handleMessage(value){
     // alert("halaman header");
     alert(this.state.daftar);
+    alert(value);
   }
   render(){
     return (
@@ -19,7 +20,7 @@ class Header extends Component {
       <h1> Elements</h1>
       <h2>{this.state.daftar}</h2>
       <p>{this.state.daftarlist}</p>
-      <a href="/" onClick={this.handleMessage}>halaman header</a>
+      <a href="/" onClick={()=>this.handleMessage("pesan data")}>halaman header</a>
      </div>
     );
   }
